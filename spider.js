@@ -26,7 +26,7 @@ crawler.addFetchCondition(function(queueItem, referrerQueueItem) {
 var cnt = 0;
 
 crawler.on('fetchcomplete', function(queueItem, responseBuffer, response) {
-  console.log('=== fetchcomplete === url:', queueItem.url);
+  // console.log('=== fetchcomplete === url:', queueItem.url);
   if (ROOT_URL == queueItem.url) return;
   var url = queueItem.url;
   if(url.indexOf('PId') == -1) return;
